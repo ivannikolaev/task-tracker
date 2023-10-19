@@ -7,22 +7,22 @@ public class DummyTaskTracker implements TaskTracker {
 
     @Override
     public Task createTask(Task task) {
-        return task;
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public Task getTask(UUID uuid) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public List<Task> getAllTasks() {
-        return Collections.emptyList();
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public void deleteTask(UUID uuid) {
-
+        throw new UnsupportedOperationException();
     }
 
     @Override
@@ -32,11 +32,16 @@ public class DummyTaskTracker implements TaskTracker {
 
     @Override
     public List<Task> getViewHistory() {
-        return Collections.emptyList();
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public Map<TaskStatus, List<Task>> getStatusBoard() {
-        return Collections.emptyMap();
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public Optional<Task> removeTask(UUID uuid) {
+        throw new UnsupportedOperationException();
     }
 }

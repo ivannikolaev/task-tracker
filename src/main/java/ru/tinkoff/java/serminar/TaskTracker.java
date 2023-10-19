@@ -2,6 +2,7 @@ package ru.tinkoff.java.serminar;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.UUID;
 
 public interface TaskTracker {
@@ -20,4 +21,5 @@ public interface TaskTracker {
 
     Map<TaskStatus, List<Task>> getStatusBoard();
 
+    Optional<Task> removeTask(UUID uuid);
 }

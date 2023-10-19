@@ -3,10 +3,10 @@ package ru.tinkoff.java.serminar;
 import java.util.List;
 import java.util.UUID;
 
-public interface HistoryViewManager<T> {
+public interface HistoryViewManager {
 
-    void addView(T uuid);
+    void addView(UUID id);
 
-    List<T> getViewHistory();
+    List<UUID> getViewHistory();
 
 }
