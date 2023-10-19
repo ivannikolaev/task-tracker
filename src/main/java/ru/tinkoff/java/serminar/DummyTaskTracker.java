@@ -7,41 +7,41 @@ public class DummyTaskTracker implements TaskTracker {
 
     @Override
     public Task createTask(Task task) {
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     @Override
     public Task getTask(UUID uuid) {
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     @Override
     public List<Task> getAllTasks() {
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     @Override
     public void deleteTask(UUID uuid) {
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     @Override
     public List<Task> getPriorityTasks() {
-        return Collections.emptyList();
+        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     @Override
     public List<Task> getViewHistory() {
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     @Override
     public Map<TaskStatus, List<Task>> getStatusBoard() {
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     @Override
     public Optional<Task> removeTask(UUID uuid) {
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException("Not implemented yet");
     }
 }
