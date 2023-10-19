@@ -84,4 +84,9 @@ public class CommandHandler {
             return e.getMessage();
         }
     }
+
+    public String updateStatus(String[] args) {
+        UUID uuid = UUID.fromString(args[1]);
+        return taskTracker.updateStatus(uuid).toString();
+    }
 }

@@ -22,4 +22,6 @@ public interface TaskTracker {
     Map<TaskStatus, List<Task>> getStatusBoard();
 
     Optional<Task> removeTask(UUID uuid);
+
+    Task updateStatus(UUID uuid);
 }

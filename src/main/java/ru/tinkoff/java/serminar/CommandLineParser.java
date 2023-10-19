@@ -12,6 +12,7 @@ public class CommandLineParser {
     private static final String GET_PRIORITY_TASKS = "priority";
     private static final String GET_HISTORY = "history";
     private static final String GET_STATUS = "status";
+    private static final String UPDATE_STATUS = "update";
 
 
     private static final String HELP_MESSAGE = """
@@ -42,6 +43,7 @@ public class CommandLineParser {
                 case GET_PRIORITY_TASKS -> commandHandler.getPriorityTasks(args);
                 case GET_HISTORY -> commandHandler.getHistory(args);
                 case GET_STATUS -> commandHandler.getStatus(args);
+                case UPDATE_STATUS -> commandHandler.updateStatus(args);
                 case null, default -> HELP_MESSAGE;
             };
             System.out.println(result);
